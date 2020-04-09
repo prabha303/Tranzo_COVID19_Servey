@@ -5,7 +5,7 @@ import com.covid91.tranzo.base.service.DaggerApplicationComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 
-class WeKanApplication() : DaggerApplication(){
+class TranzoApplication() : DaggerApplication(){
 
     init {
         instance = this
@@ -15,7 +15,7 @@ class WeKanApplication() : DaggerApplication(){
         super.attachBaseContext(base)
      }
     companion object {
-        private var instance: WeKanApplication? = null
+        private var instance: TranzoApplication? = null
         fun getApplicationContext(): Context {
             return instance!!.applicationContext
         }

@@ -1,9 +1,9 @@
 package com.covid91.tranzo.base.service
 
 import android.app.Application
+import com.covid91.tranzo.base.TranzoApplication
 import com.lynkdriver.lynk.factory.FactoryModule
 import com.lynkdriver.lynk.network.di.NetworkModule
-import com.covid91.tranzo.base.WeKanApplication
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -12,7 +12,7 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [AndroidSupportInjectionModule::class, NetworkModule::class, ActivityBuilderModule::class, FactoryModule::class])
-interface ApplicationComponent: AndroidInjector<WeKanApplication> {
+interface ApplicationComponent: AndroidInjector<TranzoApplication> {
 
     @Component.Builder
     interface Builder {
