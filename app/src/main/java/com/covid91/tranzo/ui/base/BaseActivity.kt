@@ -13,9 +13,6 @@ import dagger.android.support.DaggerAppCompatActivity
 
 abstract class BaseActivity : DaggerAppCompatActivity() {
 
-    var activityStack = arrayListOf<BaseActivity>()
-    private val tag = "BaseActivity"
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

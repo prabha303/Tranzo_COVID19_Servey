@@ -8,22 +8,34 @@ import com.covid91.tranzo.base.Constants
 
 object TransoSurveyFragmentLoader {
 
-    fun loadFragment(activity: TranzoSurveillanceActivity, viewColor: View, fragmentId: Int, data: Bundle?): Fragment? {
+    fun loadFragment(activity: TranzoSurveillanceActivity, fragmentId: Int, data: Bundle?): Fragment? {
 
         var fragment: Fragment? = null
         var fragmentTag: String? = null
 
         when (fragmentId) {
-
-            Constants.ALL_TRIPS_FRAGMENT -> {
+            Constants.FIRST_SURVEY_FRAGMENT -> {
                 fragmentTag = FirstSurveyFragment::class.java.simpleName
-                fragment = FirstSurveyFragment.newInstance(activity)
+                fragment = FirstSurveyFragment.newInstance()
                 fragment.setArguments(data)
-                viewColor.visibility = View.GONE
             }
 
+            Constants.FRAGMENT_PERSON_1 -> {
+                fragmentTag = PersonOneFragment::class.java.simpleName
+                fragment = PersonOneFragment.newInstance()
+                fragment.setArguments(data)
+            }
+            Constants.FRAGMENT_PERSON_2 -> {
+                fragmentTag = PersonTwoFragment::class.java.simpleName
+                fragment = PersonTwoFragment.newInstance()
+                fragment.setArguments(data)
+            }
 
-
+            Constants.FRAGMENT_GENERSL_INFO -> {
+                fragmentTag = GeneralInfoFragment::class.java.simpleName
+                fragment = GeneralInfoFragment.newInstance()
+                fragment.setArguments(data)
+            }
 
             else -> {
             }
@@ -34,7 +46,6 @@ object TransoSurveyFragmentLoader {
             transaction.replace(R.id.container, fragment, fragmentTag)
             transaction.commitAllowingStateLoss()
         }
-
         return fragment
     }
 

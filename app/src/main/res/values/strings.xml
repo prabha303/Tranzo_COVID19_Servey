@@ -4,5 +4,11 @@
 
     <string name="covid_19_survey">COVID-19 Survey</string>
     <string name="add_new">ADD NEW</string>
+    <string name="current_gps_location">Current GPS Location</string>
+    <string name="save_and_continue">Save And Continue</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="verify_and_save">Verify And Save</string>
 
 </resources>

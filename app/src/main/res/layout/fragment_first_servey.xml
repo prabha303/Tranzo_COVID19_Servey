@@ -1,0 +1,61 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background="@color/white"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical"
+    xmlns:android = "http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_35sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="@dimen/_19sdp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/covid_19_survey"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:text="@string/current_gps_location"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/save_and_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/save_and_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="@dimen/_26sdp"
+        android:layout_marginEnd="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:background="@drawable/button_bg"/>
+
+</LinearLayout>
