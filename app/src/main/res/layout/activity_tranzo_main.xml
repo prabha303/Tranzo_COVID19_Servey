@@ -1,0 +1,62 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background="@color/white"
+    xmlns:android = "http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@+id/container"
+        android:background="@drawable/my_gradient_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:src="@drawable/tn_logo"
+                android:visibility="visible"
+                android:contentDescription="@string/app_name" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:fontFamily="@font/roboto_bold"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="@dimen/_24sdp"
+                  android:text="@string/covid_19_survey"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_24sdp"
+                  android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/add_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_new"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginStart="@dimen/_26sdp"
+                android:layout_marginEnd="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:onClick="addNewSurvey"
+                android:background="@drawable/button_bg"/>
+        </LinearLayout>
+
+
+
+
+
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
