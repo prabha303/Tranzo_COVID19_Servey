@@ -1,4 +1,4 @@
-package com.prabha.wekan
+package com.covid91.tranzo
 
 import org.junit.Test
 
