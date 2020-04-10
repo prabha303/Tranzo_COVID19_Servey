@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.view.GestureDetectorCompat
 import com.covid91.tranzo.R
 import com.covid91.tranzo.base.Constants
@@ -22,8 +23,11 @@ class GeneralInfoFragment constructor() : BaseFragment() {
         rootView = inflater.inflate(R.layout.fragment_general_info, container, false)
 
         rootView.verify_and_save.setOnClickListener {
-            (mContext as TranzoSurveillanceActivity).loadFragment(Constants.FIRST_SURVEY_FRAGMENT, null)
+            Toast.makeText(mContext," Inprogress ", Toast.LENGTH_LONG).show()
         }
+
+        rootView.member_gradient_2.setBackgroundResource(R.drawable.member_gradient_2)
+        rootView.member_gradient_1.setBackgroundResource(R.drawable.member_gradient_1)
 
         return rootView
     }

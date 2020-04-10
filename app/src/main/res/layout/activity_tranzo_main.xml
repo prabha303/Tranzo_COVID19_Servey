@@ -50,6 +50,7 @@
                 android:layout_marginEnd="@dimen/_26sdp"
                 android:layout_marginTop="@dimen/_22sdp"
                 android:onClick="addNewSurvey"
+                android:layout_marginBottom="@dimen/_8sdp"
                 android:background="@drawable/button_bg"/>
         </LinearLayout>
 

@@ -45,7 +45,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -84,7 +84,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -124,7 +124,7 @@
                                 android:checked="false"
                                 android:fontFamily="@font/roboto_regular"
                                 android:text="@string/female"
-                                android:textSize="18sp"/>
+                                android:textSize="@dimen/_12sdp"/>
 
                             <RadioButton
                                 android:id="@+id/male"
@@ -135,7 +135,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/male"
                                 android:textColor="@color/blue"
-                                android:textSize="18sp"/>
+                                android:textSize="@dimen/_12sdp"/>
                             <RadioButton
                                 android:id="@+id/transgender"
                                 android:checked="false"
@@ -145,7 +145,7 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/transgender"
-                                android:textSize="18sp"/>
+                                android:textSize="@dimen/_12sdp"/>
                         </RadioGroup>
                     </LinearLayout>
                 </LinearLayout>
@@ -162,7 +162,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -201,7 +201,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -256,7 +256,7 @@
                 android:layout_marginEnd="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -293,18 +293,17 @@
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/yes"
-                                android:textColor="@color/black"
-                                android:textSize="18sp"/>
-
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black" />
                             <RadioButton
                                 android:id="@+id/radioButton2"
                                 android:checked="true"
+                                android:textSize="@dimen/_12sdp"
                                 android:textColor="@color/black"
                                 android:layout_marginStart="@dimen/_8sdp"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/no"
-                                android:textSize="18sp"/>
+                                android:text="@string/no" />
                         </RadioGroup>
                     </LinearLayout>
                 </LinearLayout>
@@ -319,7 +318,7 @@
                 android:layout_marginEnd="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -352,6 +351,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="false"
+                            android:textSize="@dimen/_10sdp"
                             android:fontFamily="@font/roboto_regular"
                             android:text="@string/cold" />
 
@@ -361,6 +361,7 @@
                             android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
                             android:checked="true"
                             android:text="@string/cough" />
 
@@ -370,12 +371,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp"
                             android:text="@string/fever" />
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:id="@+id/tiredness"
                             android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
                             android:text="@string/tiredness" />
 
                     </LinearLayout>
@@ -392,7 +395,7 @@
                 android:layout_marginEnd="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -426,6 +429,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="false"
+                            android:textSize="@dimen/_12sdp"
                             android:text="@string/respiratory" />
 
                         <androidx.appcompat.widget.AppCompatCheckBox
@@ -433,12 +437,14 @@
                             android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
                             android:text="@string/blood_pressure" />
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:id="@+id/diabetes"
                             android:layout_width="wrap_content"
                             android:checked="true"
+                            android:textSize="@dimen/_12sdp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
                             android:text="@string/diabetes" />
@@ -462,7 +468,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"
@@ -503,7 +509,7 @@
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:padding="@dimen/_6sdp"
-                app:cardElevation="@dimen/_6sdp">
+                app:cardElevation="@dimen/_4sdp">
                 <LinearLayout
                     android:layout_width = "match_parent"
                     android:layout_marginTop="@dimen/_12sdp"

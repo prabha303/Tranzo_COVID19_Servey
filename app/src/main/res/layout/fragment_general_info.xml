@@ -1,39 +1,278 @@
-<?xml version = "1.0" encoding = "utf-8"?>
-<LinearLayout
-    android:layout_width = "match_parent"
-    android:layout_height = "match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:background="@color/white"
-    android:orientation="vertical"
-    xmlns:android = "http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-    <TextView
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="@dimen/_19sdp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/general_information"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_edit"
+                android:text="Edit"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:layout_gravity="right"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:padding="@dimen/_6sdp"
+            app:cardElevation="@dimen/_4sdp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_height = "match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="Shollinganallur,"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:text="3,4 Fourrts Avenue,"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="Ramesh +4 "
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:layout_weight="2"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="@dimen/_19sdp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/members"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/member_gradient_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:padding="@dimen/_6sdp"
+            app:cardElevation="@dimen/_4sdp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_height = "match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:text="Ramesh, 39"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="Male, 7829XXXXXXXX"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/member_gradient_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:cardCornerRadius="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:padding="@dimen/_6sdp"
+            app:cardElevation="@dimen/_4sdp">
+            <LinearLayout
+                android:layout_width = "match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_height = "match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:text="Prabha, 34"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    android:text="Female"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:gravity="left"
-        android:layout_margin="@dimen/_16sdp"
-        android:fontFamily="@font/roboto_bold"
-        android:textSize="@dimen/_19sdp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_8sdp"
-        android:textColor="@color/colorPrimary"
-        android:text="General Information"
-        android:layout_height="wrap_content" />
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:padding="@dimen/_6sdp"
+        android:layout_above="@+id/verify_and_save"
+        app:cardElevation="@dimen/_4sdp">
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_height = "match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:text="@string/added_by"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:text="@string/info"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
     <Button
         android:id="@+id/verify_and_save"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="@string/verify_and_save"
-
         android:textColor="@color/white"
-        android:layout_marginTop="@dimen/_200sdp"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:textSize="@dimen/_18sdp"
-        android:fontFamily="@font/roboto_bold"
-        android:background="@drawable/button_bg"/>
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:text="@string/verify_and_save"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/button_bg"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textSize="@dimen/_16sdp"/>
 
-
-
-</LinearLayout>
+</RelativeLayout>

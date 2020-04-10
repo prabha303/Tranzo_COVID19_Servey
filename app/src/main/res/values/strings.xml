@@ -4,13 +4,14 @@
 
     <string name="covid_19_survey">COVID-19 Survey</string>
     <string name="person_1">Person 1</string>
+    <string name="person_2">Person 2</string>
     <string name="add_new">ADD NEW</string>
     <string name="current_gps_location">Current GPS Location</string>
-    <string name="save_and_continue">Save And Continue</string>
+    <string name="c">Save And Continue</string>
 
     <string name="next">Next</string>
     <string name="previous">Prev</string>
-    <string name="verify_and_save">Verify And Save</string>
+    <string name="verify_and_save">Verify &amp;  Save</string>
     <string name="servey_area">Servey Area</string>
     <string name="door_no">Door NO</string>
     <string name="street_name">Street Name</string>
@@ -46,6 +47,15 @@
 
     <string name="treatments_any">Treatments if any?</string>
     <string name="other_specific_illness">Other specific illness?</string>
+    <string name="added_by">Added by</string>
+    <string name="info">Muthusamy, TNP0013</string>
+
+
+
+    <string name="general_information">General Information</string>
+    <string name="members">Members</string>
+
+
 
 
 

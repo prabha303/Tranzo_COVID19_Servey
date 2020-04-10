@@ -73,7 +73,7 @@
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
 
 
                     <LinearLayout
@@ -133,7 +133,7 @@
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
 
 
                     <LinearLayout
@@ -174,7 +174,7 @@
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
                     <LinearLayout
                         android:layout_width = "match_parent"
                         android:layout_marginTop="@dimen/_12sdp"
@@ -213,7 +213,7 @@
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
                     <LinearLayout
                         android:layout_width = "match_parent"
                         android:layout_marginTop="@dimen/_12sdp"
@@ -252,7 +252,7 @@
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_4sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
                     <LinearLayout
                         android:layout_width = "match_parent"
                         android:layout_marginTop="@dimen/_12sdp"
@@ -290,7 +290,7 @@
                     android:layout_marginEnd="@dimen/_12sdp"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
                     <LinearLayout
                         android:layout_width = "match_parent"
                         android:layout_marginTop="@dimen/_12sdp"
@@ -368,7 +368,7 @@
                     android:layout_marginEnd="@dimen/_12sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
                     <LinearLayout
                         android:layout_width = "match_parent"
                         android:layout_marginTop="@dimen/_12sdp"
@@ -447,7 +447,7 @@
                     android:layout_marginEnd="@dimen/_12sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:padding="@dimen/_6sdp"
-                    app:cardElevation="@dimen/_6sdp">
+                    app:cardElevation="@dimen/_4sdp">
                     <LinearLayout
                         android:layout_width = "match_parent"
                         android:layout_marginTop="@dimen/_12sdp"
@@ -523,7 +523,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/save_and_continue"
+                    android:text="@string/verify_and_save"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16sdp"
                     android:fontFamily="@font/roboto_regular"
