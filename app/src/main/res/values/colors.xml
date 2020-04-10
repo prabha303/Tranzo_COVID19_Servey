@@ -9,5 +9,12 @@
     <color name="text_2color">#898989</color>
 
     <color name="black">#000000</color>
+    <color name="blue_app">#FF7367FB</color>
+    <color name="yellow">#FEC12D</color>
+
+    <color name="dark_pink">#FF00E2</color>
+    <color name="blue">#1841ED</color>
+    <color name="green_1">#15AE00</color>
+
 
 </resources>

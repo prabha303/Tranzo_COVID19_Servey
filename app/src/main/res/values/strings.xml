@@ -3,12 +3,51 @@
     <string name="no_list">No fuel stations found</string>
 
     <string name="covid_19_survey">COVID-19 Survey</string>
+    <string name="person_1">Person 1</string>
     <string name="add_new">ADD NEW</string>
     <string name="current_gps_location">Current GPS Location</string>
     <string name="save_and_continue">Save And Continue</string>
 
     <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="previous">Prev</string>
     <string name="verify_and_save">Verify And Save</string>
+    <string name="servey_area">Servey Area</string>
+    <string name="door_no">Door NO</string>
+    <string name="street_name">Street Name</string>
+    <string name="family_head_name_person">Name of Family head/Person staying?</string>
+    <string name="number_of_people_staying_with">Number of people staying with?</string>
+    <string name="number_of_aged_people_staying">Number of aged people staying? 60+</string>
+    <string name="kids_below10_infants">Kids below 10 /Infants</string>
+
+
+    <string name="person_1_name">Name</string>
+    <string name="your_gender">What is your Gender</string>
+    <string name="transgender">Transgender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="age">Age</string>
+    <string name="mobile_number">Mobile Number</string>
+
+    <string name="traval_history">Travel history in the last 2 month?</string>
+    <string name="yes">Yes</string>
+    <string name="no">NO</string>
+
+    <string name="covid_symptoms">COVID-19 Symptoms</string>
+    <string name="tiredness">Tiredness</string>
+    <string name="fever">Fever</string>
+    <string name="cough">Cough</string>
+    <string name="cold">Cold</string>
+
+    <string name="other_health_issue">Other health issues if any?</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="respiratory">Respiratory</string>
+    <string name="diabetes">Diabetes</string>
+
+    <string name="treatments_any">Treatments if any?</string>
+    <string name="other_specific_illness">Other specific illness?</string>
+
+
+
 
 </resources>
