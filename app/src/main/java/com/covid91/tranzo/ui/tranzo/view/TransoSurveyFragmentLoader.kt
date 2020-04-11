@@ -43,7 +43,7 @@ object TransoSurveyFragmentLoader {
 
         if (fragment != null) {
             val transaction = activity.supportFragmentManager.beginTransaction().addToBackStack(null)
-            transaction.replace(R.id.container, fragment, fragmentTag)
+            transaction.add(R.id.container, fragment, fragmentTag)
             transaction.commitAllowingStateLoss()
         }
         return fragment

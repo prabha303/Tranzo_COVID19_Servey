@@ -429,7 +429,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="false"
-                            android:textSize="@dimen/_12sdp"
+                            android:textSize="@dimen/_10sdp"
                             android:text="@string/respiratory" />
 
                         <androidx.appcompat.widget.AppCompatCheckBox
@@ -437,14 +437,14 @@
                             android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/_12sdp"
+                            android:textSize="@dimen/_10sdp"
                             android:text="@string/blood_pressure" />
 
                         <androidx.appcompat.widget.AppCompatCheckBox
                             android:id="@+id/diabetes"
                             android:layout_width="wrap_content"
                             android:checked="true"
-                            android:textSize="@dimen/_12sdp"
+                            android:textSize="@dimen/_10sdp"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
                             android:text="@string/diabetes" />

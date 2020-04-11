@@ -52,12 +52,11 @@ class TranzoSurveillanceActivity : BaseActivity(){
                 permissionDenied = true
                 showAlert()
             }
-
         })
     }
 
     private fun showAlert() {
-        DialogUtil.showAlertDialogOnlyOk(this,false,"Location Permission Required".toString(),"Location permission required ",
+        DialogUtil.showAlertDialogOnlyOk(this,false,"Location Permission Required".toString(),"Location permission required",
             "Ok",object :DialogUtil.ConfirmCallBack{
                 override fun confirmed(success: Boolean) {
                     initializeLocation()
