@@ -1,7 +1,9 @@
 package com.covid91.tranzo.ui.base
 
 import android.content.Context
+import android.location.LocationManager
 import androidx.appcompat.app.AlertDialog
+import com.covid91.tranzo.base.Constants
 
 
 object DialogUtil {
@@ -37,13 +39,13 @@ object DialogUtil {
         val alertDialog = android.app.AlertDialog.Builder(mContext)
 
         // Setting Dialog Title
-        alertDialog.setTitle("GPS settings")
+        alertDialog.setTitle(Constants.GPSsettings)
 
         // Setting Dialog Message
-        alertDialog.setMessage("GPS is not enabled. Please enable the location")
+        alertDialog.setMessage(Constants.GPSnotenabled)
 
         // On pressing Settings button
-        alertDialog.setPositiveButton("OK") { dialog, which ->
+        alertDialog.setPositiveButton(Constants.OK) { dialog, which ->
             dialog.cancel()
         }
         // on pressing cancel button
@@ -56,7 +58,16 @@ object DialogUtil {
     }
 
 
-
+    fun canGetLocation(context: Context): Boolean {
+        var flag = false
+        val locationManager = context.getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        val isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
+        val isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+        if (isGPSEnabled && isNetworkEnabled) {
+            flag = true
+        }
+        return flag
+    }
 
 
 

@@ -65,7 +65,7 @@
                         android:layout_height="wrap_content" />
                     <EditText
                         android:id="@+id/person_1_name"
-                        android:inputType="text"
+                        android:inputType="textCapSentences|text"
                         android:fontFamily="@font/roboto_regular"
                         android:textSize="@dimen/_12sdp"
                         android:layout_width="match_parent"
@@ -236,9 +236,10 @@
                             android:layout_height="match_parent" />
                         <EditText
                             android:id="@+id/mobile_number"
-                            android:inputType="phone"
                             android:fontFamily="@font/roboto_regular"
                             android:textSize="@dimen/_12sdp"
+                            android:inputType="phone"
+                            android:maxLength="10"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
                     </LinearLayout>

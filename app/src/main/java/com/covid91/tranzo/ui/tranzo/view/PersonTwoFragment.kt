@@ -108,14 +108,11 @@ class PersonTwoFragment constructor() : BaseFragment() {
         }
 
         observeViewModel()
-
-
     }
 
 
 
     fun observeViewModel() {
-
         viewmodel.getPersonTwoName().observe(this, object : Observer<String> {
             override fun onChanged(errorString: String?) {
                 rootView.person_1_name.setError(errorString)
@@ -165,11 +162,7 @@ class PersonTwoFragment constructor() : BaseFragment() {
                 (mContext as TranzoSurveillanceActivity).loadFragment(Constants.FRAGMENT_GENERSL_INFO, bundle)
             }
         })
-
-
     }
-
-
 
 
     override fun onAttach(context: Context) {

@@ -3,7 +3,6 @@ package com.covid91.tranzo.ui.tranzo.viewmodel
 import androidx.lifecycle.MutableLiveData
 import com.covid91.tranzo.base.BaseViewModel
 import com.covid91.tranzo.ui.tranzo.model.CovidSymptoms
-import com.covid91.tranzo.ui.tranzo.model.FamilyServeyModel
 import com.covid91.tranzo.ui.tranzo.model.OtherHealthIssues
 import com.covid91.tranzo.ui.tranzo.model.PersonModel
 import javax.inject.Inject
@@ -42,7 +41,7 @@ class PersonTwoViewModel @Inject constructor() :  BaseViewModel(){
             ageVal <= 0 -> {
                 validatePersonOneAge.postValue("Enter valid age")
             }
-            mobileNumber.isEmpty() || mobileNumber.length != 10 -> {
+            !mobileNumber.isEmpty() && mobileNumber.length != 10 -> {
                 validatePersonOneMobileNumber.postValue("Enter valid mobile number")
             }
             travalHistory && (travalLocation.isEmpty() || travalLocation.length == 0 ) -> {

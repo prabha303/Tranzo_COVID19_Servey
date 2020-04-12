@@ -12,7 +12,6 @@ import androidx.lifecycle.ViewModelProviders
 import com.covid91.tranzo.R
 import com.covid91.tranzo.base.Constants
 import com.covid91.tranzo.ui.base.BaseFragment
-import com.covid91.tranzo.ui.tranzo.model.FamilyServeyModel
 import com.covid91.tranzo.ui.tranzo.model.PersonModel
 import com.covid91.tranzo.ui.tranzo.model.ServeyModel
 import com.covid91.tranzo.ui.tranzo.viewmodel.TranzoSurveyViewModel

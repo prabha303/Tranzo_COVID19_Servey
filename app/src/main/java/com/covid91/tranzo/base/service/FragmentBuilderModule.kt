@@ -19,9 +19,4 @@ abstract class FragmentBuilderModule {
     @ContributesAndroidInjector
     abstract fun contributeGeneralInfoFragment(): GeneralInfoFragment
 
-
-    @ContributesAndroidInjector
-    abstract fun contributeFinalFragment(): FinalFragment
-
-
 }

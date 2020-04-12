@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProviders
 import com.covid91.tranzo.R
 import com.covid91.tranzo.base.Constants
 import com.covid91.tranzo.ui.base.BaseFragment
+import com.covid91.tranzo.ui.base.DialogUtil
 import com.covid91.tranzo.ui.service.ILocationUpdater
 import com.covid91.tranzo.ui.service.LocationUtil
 import com.covid91.tranzo.ui.tranzo.model.AddressModel
@@ -58,6 +59,11 @@ class FirstSurveyFragment : BaseFragment(), ILocationUpdater {
         }
         calculateValues()
         observeViewModel()
+
+        if (!DialogUtil.canGetLocation(mContext)) {
+            DialogUtil.showSettingsAlert(mContext)
+        }
+
     }
 
     companion object {
@@ -173,5 +179,7 @@ class FirstSurveyFragment : BaseFragment(), ILocationUpdater {
             rootView.kids_below10_count.text = "" + count
         }
     }
+
+
 }
 
