@@ -9,6 +9,7 @@ import com.covid91.tranzo.R
 import com.covid91.tranzo.base.Constants
 import com.covid91.tranzo.ui.base.BaseActivity
 import com.covid91.tranzo.ui.base.DialogUtil
+import com.covid91.tranzo.ui.tranzo.model.ServeyModel
 import com.covid91.tranzo.ui.tranzo.viewmodel.TranzoSurveyViewModel
 import javax.inject.Inject
 
@@ -20,6 +21,8 @@ class TranzoSurveillanceActivity : BaseActivity(){
     var permissionDenied = false
     private lateinit var  tranzoSurveyViewModel : TranzoSurveyViewModel
     var currentFragment: Fragment? = null
+
+    var serveyModel = ServeyModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

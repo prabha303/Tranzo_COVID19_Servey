@@ -20,4 +20,6 @@ object Constants {
     const val NOTIFICATION_NOT_FOUND = "NOTIFICATION_NOT_FOUND"
     const val HANDLE_ACK_DUPLICATION = "HANDLE_ACK_DUPLICATION"
 
+    const val SERVEYMODEL = "servey_model"
+
 }

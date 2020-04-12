@@ -1,7 +1,6 @@
 package com.covid91.tranzo.ui.tranzo.view
 
 import android.content.Context
-import android.location.Location
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,15 +14,20 @@ import com.covid91.tranzo.base.Constants
 import com.covid91.tranzo.ui.base.BaseFragment
 import com.covid91.tranzo.ui.service.ILocationUpdater
 import com.covid91.tranzo.ui.service.LocationUtil
+import com.covid91.tranzo.ui.tranzo.model.AddressModel
+import com.covid91.tranzo.ui.tranzo.model.FamilyServeyModel
+import com.covid91.tranzo.ui.tranzo.model.ServeyModel
 import com.covid91.tranzo.ui.tranzo.viewmodel.TranzoSurveyViewModel
 import com.lynkdriver.lynk.factory.ViewModelFactory
 import kotlinx.android.synthetic.main.fragment_first_servey.*
 import kotlinx.android.synthetic.main.fragment_first_servey.view.*
 import javax.inject.Inject
 
+
 class FirstSurveyFragment : BaseFragment(), ILocationUpdater {
 
     lateinit var rootView: View
+    var areaName = ""
     private lateinit var mContext: Context
 
     @Inject
@@ -47,10 +51,13 @@ class FirstSurveyFragment : BaseFragment(), ILocationUpdater {
                 rootView.family_head_name_person.text.toString(),
                 rootView.number_of_people_staying_count.text.toString(),
                 rootView.aged_people_count.text.toString(),
-                rootView.kids_below10_count.text.toString())
+                rootView.kids_below10_count.text.toString(),
+                rootView.address.text.toString(),
+                areaName
+            )
         }
         calculateValues()
-        observeLoginViewModel()
+        observeViewModel()
     }
 
     companion object {
@@ -61,14 +68,15 @@ class FirstSurveyFragment : BaseFragment(), ILocationUpdater {
         mContext = context
     }
 
-    override fun onLocationChanged(address: String) {
+    override fun onLocationChanged(address: AddressModel) {
         Log.d("onLocationChanged", "location : $address")
-        rootView.address.setText(address)
+        rootView.address.setText(address.Address)
+        areaName = address.Area!!
     }
 
 
 
-    fun observeLoginViewModel() {
+    fun observeViewModel() {
 
         viewmodel.getServeyArea().observe(this, object : Observer<String> {
             override fun onChanged(errorString: String?) {
@@ -115,9 +123,14 @@ class FirstSurveyFragment : BaseFragment(), ILocationUpdater {
                 Toast.makeText(mContext,errorString, Toast.LENGTH_LONG).show()
             }
         })
-        viewmodel.callPersonOneNext().observe(this, object : Observer<String> {
-            override fun onChanged(errorString: String?) {
-                (mContext as TranzoSurveillanceActivity).loadFragment(Constants.FRAGMENT_PERSON_1, null)
+        viewmodel.callPersonOneNext().observe(this, object : Observer<FamilyServeyModel> {
+            override fun onChanged(familyServeyModel: FamilyServeyModel) {
+                val serveyModel = ServeyModel()
+                serveyModel.familyServeyModel = familyServeyModel
+                val bundle = Bundle()
+                bundle.putParcelable(Constants.SERVEYMODEL,serveyModel)
+
+                (mContext as TranzoSurveillanceActivity).loadFragment(Constants.FRAGMENT_PERSON_1, bundle)
             }
         })
 

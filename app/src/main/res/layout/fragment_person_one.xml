@@ -235,7 +235,7 @@
                             android:layout_gravity="center"
                             android:layout_height="match_parent" />
                         <EditText
-                            android:id="@+id/family_head_name_person"
+                            android:id="@+id/mobile_number"
                             android:inputType="phone"
                             android:fontFamily="@font/roboto_regular"
                             android:textSize="@dimen/_12sdp"
@@ -289,14 +289,14 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
                             <RadioButton
-                                android:id="@+id/radioButton1"
+                                android:id="@+id/yes"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/yes"
                                 android:textSize="@dimen/_12sdp"
                                 android:textColor="@color/black" />
                             <RadioButton
-                                android:id="@+id/radioButton2"
+                                android:id="@+id/no"
                                 android:checked="true"
                                 android:textSize="@dimen/_12sdp"
                                 android:textColor="@color/black"
@@ -306,6 +306,18 @@
                                 android:text="@string/no" />
                         </RadioGroup>
                     </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/traval_location"
+                        android:inputType="text"
+                        android:fontFamily="@font/roboto_regular"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:hint="Enter travel location"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 

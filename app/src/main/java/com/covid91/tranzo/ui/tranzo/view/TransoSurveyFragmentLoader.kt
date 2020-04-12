@@ -1,7 +1,6 @@
 package com.covid91.tranzo.ui.tranzo.view
 
 import android.os.Bundle
-import android.view.View
 import androidx.fragment.app.Fragment
 import com.covid91.tranzo.R
 import com.covid91.tranzo.base.Constants
@@ -30,7 +29,6 @@ object TransoSurveyFragmentLoader {
                 fragment = PersonTwoFragment.newInstance()
                 fragment.setArguments(data)
             }
-
             Constants.FRAGMENT_GENERSL_INFO -> {
                 fragmentTag = GeneralInfoFragment::class.java.simpleName
                 fragment = GeneralInfoFragment.newInstance()
@@ -44,7 +42,7 @@ object TransoSurveyFragmentLoader {
         if (fragment != null) {
             val transaction = activity.supportFragmentManager.beginTransaction().addToBackStack(null)
             transaction.add(R.id.container, fragment, fragmentTag)
-            transaction.commitAllowingStateLoss()
+            transaction.commit()
         }
         return fragment
     }

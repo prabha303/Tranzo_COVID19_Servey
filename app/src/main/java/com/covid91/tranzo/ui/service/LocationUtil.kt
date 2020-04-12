@@ -10,6 +10,7 @@ import android.os.Looper
 import android.text.TextUtils
 import android.util.Log
 import android.util.Log.e
+import com.covid91.tranzo.ui.tranzo.model.AddressModel
 import com.google.android.gms.location.*
 import java.io.IOException
 import java.util.*
@@ -85,8 +86,9 @@ class LocationUtil private constructor() {
     }
 
 
-    private class GetAddressTask(val context: Context,val updateInterService : ILocationUpdater): AsyncTask<Location, Void, String>() {
-        override fun doInBackground(vararg params: Location?): String {
+
+    class GetAddressTask(val context: Context,val updateInterService : ILocationUpdater): AsyncTask<Location, Void, AddressModel>() {
+        override fun doInBackground(vararg params: Location?): AddressModel? {
             try {
                 val geocoder = Geocoder(context, Locale.getDefault())
                 var addresses: List<Address>? = null
@@ -99,16 +101,20 @@ class LocationUtil private constructor() {
                 val out = StringBuilder()
                 for (i in 0..address.maxAddressLineIndex) {
                     out.append(address.getAddressLine(i))
+                    address.adminArea
                 }
-                return out.toString()
+                val addressModel = AddressModel()
+                addressModel.Address = out.toString()
+                addressModel.Area = address.adminArea
+                return addressModel
             }catch (e: Exception) {
                 e.printStackTrace()
             }
-            return ""
+            return null
         }
-        override fun onPostExecute(result: String?) {
-            if(!TextUtils.isEmpty(result)) {
-                getInstance().resultAdress = result!!
+        override fun onPostExecute(result: AddressModel) {
+            if(!TextUtils.isEmpty(result.Address)) {
+                getInstance().resultAdress = result.Address!!
                 updateInterService.onLocationChanged(result)
             }
         }

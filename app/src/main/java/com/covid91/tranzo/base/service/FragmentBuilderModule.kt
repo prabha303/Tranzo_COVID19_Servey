@@ -1,9 +1,6 @@
 package com.covid91.tranzo.base.service
 
-import com.covid91.tranzo.ui.tranzo.view.FirstSurveyFragment
-import com.covid91.tranzo.ui.tranzo.view.GeneralInfoFragment
-import com.covid91.tranzo.ui.tranzo.view.PersonOneFragment
-import com.covid91.tranzo.ui.tranzo.view.PersonTwoFragment
+import com.covid91.tranzo.ui.tranzo.view.*
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -21,6 +18,10 @@ abstract class FragmentBuilderModule {
 
     @ContributesAndroidInjector
     abstract fun contributeGeneralInfoFragment(): GeneralInfoFragment
+
+
+    @ContributesAndroidInjector
+    abstract fun contributeFinalFragment(): FinalFragment
 
 
 }
